@@ -4,10 +4,10 @@ import {connect} from 'react-redux';
 
 class Counter extends React.Component {
     increment = () => {
-        
+        this.props.dispatch({type: 'INCREMENT'})
     }
     decrement = () => {
-       
+        this.props.dispatch({type: 'DECREMENT'})
     }
     render(){
         return(
