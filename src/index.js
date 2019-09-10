@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import {createStore} from 'redux';
-
+import { Provider } from "react-redux";
 
 
 
@@ -37,5 +37,8 @@ store.dispatch({type: 'INCREMENT'});
 store.dispatch({type: 'DECREMENT'});
 store.dispatch({type: 'RESET'});
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render( <Provider store={store}>
+        <App />
+    </Provider>, 
+    document.getElementById('root'));
 
