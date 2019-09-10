@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import {createStore} from 'redux'
-import { stat } from 'fs';
+import {createStore} from 'redux';
+
+
 
 
 
@@ -34,7 +35,6 @@ console.log(store)
 store.dispatch({type: 'INCREMENT'});
 store.dispatch({type: 'INCREMENT'});
 store.dispatch({type: 'DECREMENT'});
-store.dispatch({type: 'RESET'});
 store.dispatch({type: 'RESET'});
 
 ReactDOM.render(<App />, document.getElementById('root'));

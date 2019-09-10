@@ -1,13 +1,14 @@
-import React from 'react';
-import Counter from './Counter'
-import './App.css';
+import React from "react";
+import Counter from "./Counter";
+import { Provider } from "react-redux";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <Provider>
       <Counter />
-    </div>
+    </Provider>
   );
-}
+};
 
 export default App;
